@@ -1,0 +1,4 @@
+Feature: User Registeration
+
+Scenario: Register with mandatory fields
+Given I navigate to Register Account Page

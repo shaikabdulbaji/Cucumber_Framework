@@ -1,0 +1,109 @@
+#Here all "Given,When,Then,And" statements are not implemented, hint for implementation is those statements
+#will turn into yellow color statements.
+#To overcome this right click on project -> go to configure -> go to convert to cucumber project and click on it.
+#After convertion to cucumber project we mostly not seen that yellow lines it was overcomed by "cucumber symbol".
+
+
+#Suppose in any statement of "Given,When,Then,And" are not matched to stepdefinition file it gives error in feature file
+
+#In two ways we can generate step definition file 
+#1. By right click on feature file and click on run and click on cucumber feature, step definition steps will generate.
+#2. Other way copy these all steps and paste in "Tidy Gherkin" application, step definition steps will generate.
+
+# Background keyword is used for putting all the common steps under it.
+
+
+
+
+Feature: User Login Successfully
+Register User should be able to login to access account details
+
+Background: 
+Given User navigate to login page
+Then click on login button
+
+
+Scenario Outline: Login with valid credentials
+When User enters valid email address <email>
+And Enter valid password <password>
+And User should login successfully."amotooricap1@gmail.com"
+Examples: 
+|         email		    	|password|		
+|amotooricap1@gmail.com |12345|
+|amotooricap3@gmail.com |12345|
+|amotooricap9@gmail.com |12345| 
+
+
+#Scenario: Login with invalid credentials
+#When User enters invalid email address "amotooricap11111@gmail.com"
+#And Enter invalid password "json"
+#And User should get a proper warning message.
+#
+#Scenario: Login with valid email address and invalid password credentials
+#When User enters invalid email address "amotooricap1@gmail.com"
+#And Enter invalid password "json"
+#And User should get a proper warning message.
+#
+#Scenario: Login with invalid email address and valid password credentials
+#When User enters invalid email address "amotooricap11111@gmail.com"
+#And Enter invalid password "12345"
+#And User should get a proper warning message.
+#
+#Scenario: Login with invalid email address and invalid password credentials
+#Given User navigate to login page
+#When User enters invalid email address "amotooricap11111@gmail.com"
+#And Enter invalid password "json"
+#And User should get a proper warning message.
+#
+#Scenario: Login with without credentials
+#When User not enter email address 
+#And Enter no password 
+#And User should get a proper warning message.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#@tag
+#Feature: Title of your feature
+  #I want to use this template for my feature file
+#
+  #@tag1
+  #Scenario: Title of your scenario
+    #Given I want to write a step with precondition
+    #And some other precondition
+    #When I complete action
+    #And some other action
+    #And yet another action
+    #Then I validate the outcomes
+    #And check more outcomes
+#
+  #@tag2
+  #Scenario Outline: Title of your scenario outline
+    #Given I want to write a step with <name>
+    #When I check for the <value> in step
+    #Then I verify the <status> in step
+#
+    #Examples: 
+      #| name  | value | status  |
+      #| name1 |     5 | success |
+      #| name2 |     7 | Fail    |

@@ -1,0 +1,27 @@
+package b19Regular_Expressions;
+
+import java.util.regex.Pattern;
+
+public class aSample {
+	
+	public static void main(String[] args) {
+		
+		//boolean matchingStatus = Pattern.matches(".*Abdul.*", "My name is Shaik Abdul Baji");
+		//boolean matchingStatus = Pattern.matches("Abdul", "My name is Shaik Abdul Baji");
+		boolean matchingStatus = Pattern.matches("java", "java");
+
+		
+		if(matchingStatus)
+		{
+			System.out.println("Matched");
+		}else
+		{
+			System.out.println("Not Matched");
+		}
+		
+		
+		
+		
+	}
+
+}

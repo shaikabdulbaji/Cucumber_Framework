@@ -1,0 +1,32 @@
+package b19Regular_Expressions;
+
+import java.util.regex.Pattern;
+
+public class aSample {
+	
+	public static void main(String[] args) {
+		
+		//boolean matchingStatus = Pattern.matches(".*Abdul.*", "My name is Shaik Abdul Baji");
+		//boolean matchingStatus = Pattern.matches("Abdul", "My name is Shaik Abdul Baji");
+		//boolean matchingStatus = Pattern.matches("java", "java");
+		//boolean matchingStatus = Pattern.matches("java", "Java");
+		//boolean matchingStatus = Pattern.matches("[Jj]ava", "Java");
+		//boolean matchingStatus = Pattern.matches("[Jj]ava", "java");
+		//boolean matchingStatus = Pattern.matches("[Jj]ava", "python");
+		boolean matchingStatus = Pattern.matches("ski[pr]", "skip");
+
+		
+		if(matchingStatus)
+		{
+			System.out.println("Matched");
+		}else
+		{
+			System.out.println("Not Matched");
+		}
+		
+		
+		
+		
+	}
+
+}

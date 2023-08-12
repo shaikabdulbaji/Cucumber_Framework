@@ -1,0 +1,10 @@
+package b10Creating_Scenarios_in_Feature_File_and_Running_them;
+
+public class sample {
+	
+	/*
+	 * Cucumber is a "Framework/Tool", Which supports the implementation of BDD
+	 * BDD(Behaviour Driven Development)
+	 */
+
+}

@@ -1,0 +1,10 @@
+Feature: User Registeration
+
+Scenario: Register with mandatory fields
+Given I navigate to Register Account Page
+When User enter first name "shaik" into the First Name Field
+And User enter last name "abdul" into the Last Name Field
+And User enter email address "shaikbaji8727@gmail.com" into the Email Address Field
+And User enter telephone "1234567890" into the Telephone Field
+And User enter password "12345" into the Password Field
+And User enter password "12345" into the Confirm Password Field

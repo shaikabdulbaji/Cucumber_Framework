@@ -1,0 +1,63 @@
+package b12Creating_Step_Definitions_and_Running_Feature_Files;
+
+//import io.cucumber.java.en.Given;
+//import io.cucumber.java.en.Then;
+//import io.cucumber.java.en.When;
+
+import io.cucumber.java.en.*;
+
+/*
+ * import io.cucumber.java.en.Given;
+   import io.cucumber.java.en.Then;
+   import io.cucumber.java.en.When;
+   
+ * In place of above three imports we can use single import by "Regular Expression"
+ * import io.cucumber.java.en.*;
+
+ */
+
+public class Login12Step_Defenition_File {
+	
+	@Given("User navigate to login page")
+	public void user_navigate_to_login_page() {
+		
+		System.out.println(" Login Successfully ");
+	    
+	}
+
+	@When("User enters valid email address {string}")
+	public void user_enters_valid_email_address(String string) {
+	    
+	}
+
+	@When("Enter valid password {string}")
+	public void enter_valid_password(String string) {
+	    
+	}
+
+	@Then("click on login button")
+	public void click_on_login_button() {
+	    
+	}
+
+	@Then("User should login successfully.")
+	public void user_should_login_successfully() {
+	    
+	}
+
+	@When("User enters invalid email address {string}")
+	public void user_enters_invalid_email_address(String string) {
+	    
+	}
+
+	@When("Enter invalid password {string}")
+	public void enter_invalid_password(String string) {
+	    
+	}
+
+	@Then("User should get a proper warning message.")
+	public void user_should_get_a_proper_warning_message() {
+	    
+	}
+
+}

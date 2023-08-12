@@ -1,0 +1,12 @@
+package a8Creating_Feature_Files_and_Running;
+
+public class sample {
+	
+	/*
+	 * Cucumber is a "Framework/Tool", Which supports the implementation of BDD
+	 * BDD(Behaviour Driven Development)
+	 * 
+	 * Creating feature file
+	 */
+
+}

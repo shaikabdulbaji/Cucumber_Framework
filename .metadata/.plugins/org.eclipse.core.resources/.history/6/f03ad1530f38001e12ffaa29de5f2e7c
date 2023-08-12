@@ -1,0 +1,85 @@
+package b13Creating_Multiple_Feature_Files_and_Step_Definitions;
+
+import io.cucumber.java.en.*;
+
+public class Register13Step_Defenition_File {
+	
+	@Given("User navigate to Register Account Page")
+	public void user_navigate_to_register_account_page() {
+		
+		System.out.println(">> User navigated to login page ");
+	    
+	}
+
+	@When("User enter first name {string} into the First Name Field")
+	public void user_enter_first_name_into_the_first_name_field(String firstname) {
+		
+		System.out.println(">> User enter first name" +firstname+  "into the First Name Field ");
+	    
+	}
+
+	@When("User enter last name {string} into the Last Name Field")
+	public void user_enter_last_name_into_the_last_name_field(String lastname) {
+	    
+		System.out.println(">> User enter last name" +lastname+  "into the First Name Field ");
+		
+	}
+
+	@When("User enter email address {string} into the Email Address Field")
+	public void user_enter_email_address_into_the_email_address_field(String emailaddress) {
+		
+		System.out.println(">> User enter email address" +emailaddress+  "into the First Name Field ");
+	    
+	}
+
+	@When("User enter telephone {string} into the Telephone Field")
+	public void user_enter_telephone_into_the_telephone_field(String string) {
+	    
+	}
+
+	@When("User enter password {string} into the Password Field")
+	public void user_enter_password_into_the_password_field(String string) {
+	    
+	}
+
+	@When("User enter password {string} into the Confirm Password Field")
+	public void user_enter_password_into_the_confirm_password_field(String string) {
+	    
+	}
+
+	@When("Selects Privacy Policy field")
+	public void selects_privacy_policy_field() {
+	    
+	}
+
+	@When("Clicks on Continue button")
+	public void clicks_on_continue_button() {
+	    
+	}
+
+	@Then("Account Creaated Successfully.")
+	public void account_creaated_successfully() {
+	    
+	}
+
+	@When("Select Yes for Newsletter")
+	public void select_yes_for_newsletter() {
+	    
+	}
+
+	@When("User dont enter details into anyfields")
+	public void user_dont_enter_details_into_anyfields() {
+	    
+	}
+
+	@Then("User should get a proper warning message displayed for the mandatory fields.")
+	public void user_should_get_a_proper_warning_message_displayed_for_the_mandatory_fields() {
+	    
+	}
+
+	@Then("messaging like duplicate fields.")
+	public void messaging_like_duplicate_fields() {
+	    
+	}
+
+}
