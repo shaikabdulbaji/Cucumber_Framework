@@ -1,8 +1,0 @@
-package b15Running_Multiple_Feature_Files_together_using_Runner_Class;
-
-
-
-@RunWith
-public class MyRunner {
-
-}

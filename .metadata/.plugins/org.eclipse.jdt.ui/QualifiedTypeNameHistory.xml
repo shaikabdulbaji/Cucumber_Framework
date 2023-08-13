@@ -7,4 +7,9 @@
     <fullyQualifiedTypeName name="io.cucumber.junit.Cucumber"/>
     <fullyQualifiedTypeName name="io.cucumber.junit.CucumberOptions"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.AfterStep"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.BeforeStep"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.Before"/>
+    <fullyQualifiedTypeName name="io.cucumber.java.After"/>
+    <fullyQualifiedTypeName name="io.cucumber.datatable.DataTable"/>
 </qualifiedTypeNameHistroy>
