@@ -1,0 +1,11 @@
+package b40Retrieving_Scenario_names_into_hooks_MyHooks;
+
+public class Hooks {
+	
+	public void setUp()
+	{
+		System.out.println(">> Browser got launched and maximized ");
+		System.out.println(">> Application URL got opened in the browser ");
+	}
+
+}

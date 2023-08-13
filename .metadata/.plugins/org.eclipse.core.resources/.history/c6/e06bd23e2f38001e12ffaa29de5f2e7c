@@ -1,9 +1,0 @@
-package b17Scenario_Outline_and_Examples_Data_Driven_Testing;
-import org.junit.runner.RunWith;
-
-import io.cucumber.junit.Cucumber;
-
-@RunWith(Cucumber.class)
-public class MyRunner {
-
-}

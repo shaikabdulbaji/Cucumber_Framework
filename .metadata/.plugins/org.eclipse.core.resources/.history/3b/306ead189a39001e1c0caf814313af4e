@@ -1,0 +1,10 @@
+package b40Retrieving_Scenario_names_into_hooks_MyHooks;
+
+public class Hooks {
+	
+	public void setUp()
+	{
+		
+	}
+
+}

@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features="src/test/java/b34Organizing_the_Cucumber_Project_Feature",
+		features="src/main/java/b34Organizing_the_Cucumber_Project_Feature",
 		glue="b34Organizing_the_Cucumber_Project_Stepdefinition",
 		plugin= {"pretty",
 		"html:target/CucumberReport.html"})

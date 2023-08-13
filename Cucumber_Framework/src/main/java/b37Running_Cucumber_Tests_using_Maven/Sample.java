@@ -1,0 +1,28 @@
+package b37Running_Cucumber_Tests_using_Maven;
+
+public class Sample {
+
+	
+	/*
+	 * This session all about "Running Cucumber Tests using Maven"
+	 * If we run normally by right clcik on "MyRunner" class and click on "JUnit"
+	   it will run normally.
+	 * If we want to run the project by maven go to project and right click on project
+	   go to run as it will display some options related to maven, click on maven test
+	   the tests will run, but in this case the tests will not run.
+	   
+	 * To run the tests by maven first of all we want to update the "surefire plugin"
+	   in pom.xml file. In pom.xml file there is normal surefire plugin but we want
+	   to udate it with new surefire plugin.
+	   eg:	 <plugin>
+		          <groupId>org.apache.maven.plugins</groupId>
+		          <artifactId>maven-surefire-plugin</artifactId>
+		          <version>3.1.2</version>
+		    </plugin>
+	   After updating this surefire plugin in pom.xml file, then go to go to project 
+	   and right click on project go to run as it will display some options related 
+	   to maven, click on maven test the tests will run normally.
+	*/
+	
+	
+}

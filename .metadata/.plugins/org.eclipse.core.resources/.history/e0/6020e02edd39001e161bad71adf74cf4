@@ -1,0 +1,48 @@
+package b51Integrating_TestNG_in_Cucumber_MyRunner;
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+
+/*
+ * @CucumberOptions(plugin= {"html:target/CucumberReport.html"})
+   The above line is attached in Runner class to see then html report.
+   html:target/CucumberReport.html --> This is the path where that report is stored.
+   pretty --> It will give clear report.
+   
+   
+ * features="src/main/java/b35Running_a_specific_feature_file_features/Login34.feature"
+   features="src/main/java/b35Running_a_specific_feature_file_features/Register34.feature"
+   If we want to run particular feature then we give the above line of particular feature path.
+   
+ * It will run except these tags scenarios
+   tags="@all and not @dev and not @ignore and not @wip"
+   
+ * To test the "dryRun" first of all add one step in feature file and run "MyRunner" then
+   put dryRun="true" you will see the difference.
+   
+ * Now a days in latest cucumber version the junk text was not coming in console, the main
+   use of  monochrome=true is for cleaning junk text in console.
+   
+ * In this session we are integrating TestNG with Cucumber 
+   while doing this we follow some points
+   1. First we add dependency with name "Cucumber-TestNG"
+   2. Then open MyRunner class and remove this tag@RunWith(Cucumber.class)
+   3. And extend MyRunner with "AbstractTestNGTests"
+   
+  */
+
+
+@CucumberOptions(
+		features="src/main/java/b51Integrating_TestNG_in_Cucumber_features",
+		glue={"b51Integrating_TestNG_in_Cucumber_Stepdefinition","b51Integrating_TestNG_in_Cucumber_MyHooks"},
+		tags="@all",
+		publish=true,
+		monochrome=true,
+		plugin= {"pretty",
+				"html:target/CucumberReports/CucumberReport.html",
+				"json:target/CucumberReports/CucumberReport.json",
+				"junit:target/CucumberReports/CucumberReport.xml"})
+
+public class MyRunner extends AbstractTestNGCucumberTests{
+
+}
